@@ -13,7 +13,7 @@ app.engine('hbs', exphbs.engine({
   partialsDir: __dirname + '/views/partials/'
 }));
 
-app.use(express.static('public'))
+app.use(express.static(__dirname + '/public'))
 
 const countries = [
   "Indonesia",
